@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b94d3b36678fa546ab219ffd6385cd8, type: 3}
+  m_Name: Vanilla Extract
+  m_EditorClassIdentifier: 
+  id: 8
+  itemName: Vanilla Extract
+  icon: {fileID: 8709450489304053464, guid: 46c5d0b62e71ed347aeda68bd6eca06f, type: 3}
+  type: 1
+  itemDescription: a vial of vanilla extract found in my aunt's kitchen cabinet
