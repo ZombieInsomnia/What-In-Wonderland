@@ -11,9 +11,7 @@ public class GameManager : MonoBehaviour
     
     void Start()
     {
-        
-        
-
+       
         Inventory = GetComponent<Canvas>();
         Inventory.enabled = false;
     }
@@ -24,7 +22,6 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Open();
-            inventoryManager.ListItems();
         }
         if (Input.GetKey(KeyCode.Escape))
         {

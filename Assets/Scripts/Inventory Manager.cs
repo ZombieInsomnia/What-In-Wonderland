@@ -22,8 +22,8 @@ public class InventoryManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       
-        Items.Add(initialItem);
+      
+        Add(initialItem);
     }
 
     // Update is called once per frame
@@ -37,46 +37,19 @@ public class InventoryManager : MonoBehaviour
         {
             ingredientCheck.recipeItems = false;
         }
-        ListItems();
 
     }
     private void Awake()
     {
+        Debug.Log("This should only happen once");
         Instance = this;
     }
 
     public void Add(Item item)
     {
         Items.Add(item);
-        
-        
-
-
-    }
-    public void ListItems()
-    {
-
-        foreach (Transform item in ItemContent)
-        {
-            Destroy(item.gameObject);
-        }
-        foreach (var item in Items) 
-        {
-            GameObject obj = Instantiate(InventoryItem, ItemContent);
-            var itemName = obj.transform.Find("ItemName").GetComponent<TextMeshProUGUI>();
-            var itemIcon = obj.transform.Find("ItemImage").GetComponent<Image>();
-
-            itemName.text = item.itemName;
-            itemIcon.sprite = item.icon;
-            if (Input.GetMouseButtonDown(0)) 
-            {
-                CheckItems(item);
-              
-            }
-            
-
-        }
-       
+        GameObject obj = Instantiate(InventoryItem, ItemContent);
+        obj.GetComponent<ItemButton>().SetItem(item);
     }
 
    

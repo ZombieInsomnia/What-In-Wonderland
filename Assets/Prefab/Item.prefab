@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4604624733900845728}
   - component: {fileID: 1772767215687159031}
   - component: {fileID: 603351104185740709}
+  - component: {fileID: 3599127613097770233}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -123,9 +124,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 3dd152bc6d39a454ba81479c17129ddd, type: 3}
-        m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 3599127613097770233}
+        m_TargetAssemblyTypeName: ItemButton, Assembly-CSharp
+        m_MethodName: CheckItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -181,6 +182,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3599127613097770233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2591120013725199335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426afc1e0c9246144ba4b0015534805f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: {fileID: 7608359918054508256}
+  sprite: {fileID: 3482269193353817322}
 --- !u!1 &5807287109249389463
 GameObject:
   m_ObjectHideFlags: 0

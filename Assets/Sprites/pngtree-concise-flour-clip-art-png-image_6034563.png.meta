@@ -180,6 +180,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -834,7 +860,36 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pngtree-concise-flour-clip-art-png-image_6034563_0: -6971359044845426247
+      pngtree-concise-flour-clip-art-png-image_6034563_1: -4673808200027959132
+      pngtree-concise-flour-clip-art-png-image_6034563_10: 713678974937332836
+      pngtree-concise-flour-clip-art-png-image_6034563_11: -8099387988139792859
+      pngtree-concise-flour-clip-art-png-image_6034563_12: -8038416684596793557
+      pngtree-concise-flour-clip-art-png-image_6034563_13: -7348084349400481637
+      pngtree-concise-flour-clip-art-png-image_6034563_14: -8906969966105973560
+      pngtree-concise-flour-clip-art-png-image_6034563_15: -3661779814886440851
+      pngtree-concise-flour-clip-art-png-image_6034563_16: -6285563766176387368
+      pngtree-concise-flour-clip-art-png-image_6034563_17: -8473745403192518933
+      pngtree-concise-flour-clip-art-png-image_6034563_18: 2406659217721883020
+      pngtree-concise-flour-clip-art-png-image_6034563_19: 6458292889958387575
+      pngtree-concise-flour-clip-art-png-image_6034563_2: 471818482333413600
+      pngtree-concise-flour-clip-art-png-image_6034563_20: 3850470099176130984
+      pngtree-concise-flour-clip-art-png-image_6034563_21: 6513214597197503222
+      pngtree-concise-flour-clip-art-png-image_6034563_22: 2986773316276928356
+      pngtree-concise-flour-clip-art-png-image_6034563_23: -5299633563361215902
+      pngtree-concise-flour-clip-art-png-image_6034563_24: -6475631847866673858
+      pngtree-concise-flour-clip-art-png-image_6034563_25: 549622761919960715
+      pngtree-concise-flour-clip-art-png-image_6034563_26: -4065509999389336198
+      pngtree-concise-flour-clip-art-png-image_6034563_27: -4115056104664182964
+      pngtree-concise-flour-clip-art-png-image_6034563_28: 4296660145044174166
+      pngtree-concise-flour-clip-art-png-image_6034563_3: 2669397233119316938
+      pngtree-concise-flour-clip-art-png-image_6034563_4: 6020075906731224345
+      pngtree-concise-flour-clip-art-png-image_6034563_5: -3974595451828743191
+      pngtree-concise-flour-clip-art-png-image_6034563_6: -20759083187934907
+      pngtree-concise-flour-clip-art-png-image_6034563_7: 7596189320776668086
+      pngtree-concise-flour-clip-art-png-image_6034563_8: -8910418889136359385
+      pngtree-concise-flour-clip-art-png-image_6034563_9: 3004650766474292813
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

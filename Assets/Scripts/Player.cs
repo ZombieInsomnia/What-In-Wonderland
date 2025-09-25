@@ -18,8 +18,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxis("Horizontal");
-        vertical = Input.GetAxis("Vertical");
+        horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxisRaw("Vertical"); 
+    }
+        
+    private void FixedUpdate()
+    {
         Vector3 moveDirection = new Vector3(horizontal, 0, vertical);
         rb.linearVelocity = moveDirection * speed * Time.deltaTime;
         if (horizontal != 0)
@@ -35,3 +39,5 @@ public class Player : MonoBehaviour
         }
     }
 }
+    
+

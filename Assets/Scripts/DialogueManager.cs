@@ -12,45 +12,66 @@ public class DialogueManager : MonoBehaviour
     public Image potraitImage;
     int dialogueIndex;
     public static DialogueManager instance;
-    private Queue<DialogueLine> lines;
     public bool isDialogueActive = false;
-    public float typingSpeed = 0.2f;
-    DialogueCharacter character;
+    public float typingSpeed = 0.01f;
+    List<DialogueLine> currentDialogue = new List<DialogueLine>();
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         if (instance == null)
             instance = this;
     }
-
-    public void StartDialogue(DialogueTrigger dialogue)
+    void Update()
     {
-        Debug.Log("Pls work");
-        
-        isDialogueActive = true; 
-        dialoguePanel.SetActive(true);
-        lines.Clear(); //clears dialogue queue in case there is any lines left over (adding this causes the same error)
-
-        Debug.Log("why won't u work"); //this doesn't show up anymore
-        foreach (DialogueLine dialogueLine in dialogue.dialogueLines) //supposed to go through the dialogue lines
-        { 
-            lines.Enqueue(dialogueLine);
-            Debug.Log("pls pls pls"); 
+        if (isDialogueActive == true)
+        {
+            Time.timeScale = 0f;
         }
-        DisplayNextDialogueLine();
+        if (isDialogueActive == false)
+        {
+            Time.timeScale = 1f;
+        }
+    }
+
+    public void StartDialogue(Dialogue dialogue)
+    {
+        if (dialogueIndex >= dialogue.dialogueLines.Count)
+        {
+            Debug.Log($"No dialogue?????? - {dialogue.dialogueLines.Count}");
+
+            //End of dialogue
+            EndDialogue();
+            //line.Clear();
+            dialogueIndex = 0;
+        }
+        else
+        {
+            Debug.Log("Pls work");
+
+            isDialogueActive = true;
+            dialoguePanel.SetActive(true);
+            currentDialogue = dialogue.dialogueLines;
+            DisplayNextDialogueLine();
+        }
     }
     public void DisplayNextDialogueLine()
     {
-        if (lines.Count == 0)
+        if (dialogueIndex >= currentDialogue.Count)
         {
+            //End of dialogue
             EndDialogue();
+            //line.Clear();
+            dialogueIndex = 0;
             return;
         }
-        DialogueLine currentLine = lines.Dequeue();
-        nameText.SetText(character.Name);
-        potraitImage.sprite = character.icon;
+
+        DialogueLine currentLine = currentDialogue[dialogueIndex];
+        nameText.SetText(currentLine.Name);
+        potraitImage.sprite = currentLine.icon;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(currentLine));
+        dialogueIndex++;
 
     }
     IEnumerator TypeSentence(DialogueLine dialogueLine)
@@ -61,6 +82,7 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        yield return null;
     }
     public void EndDialogue()
     {

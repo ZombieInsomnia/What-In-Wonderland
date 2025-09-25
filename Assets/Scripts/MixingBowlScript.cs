@@ -2,6 +2,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class MixingBowlScript : MonoBehaviour
 {
@@ -14,10 +15,9 @@ public class MixingBowlScript : MonoBehaviour
 
     public Dialogue dialogueA;
     public Dialogue dialogueB;
-    public Dialogue dialogueC;  
-    
+    public Dialogue dialogueC;
 
-    
+    List<int> test = new List<int>();
 
     public void Mix()
     {
@@ -34,8 +34,7 @@ public class MixingBowlScript : MonoBehaviour
         {
             if (itemsHaveBeenUsed == false)
             {
-                //checks if you have the recipe items in inventory, and if you've used them
-                dialogueB.TriggerDialogue();
+                DialogueManager.instance.StartDialogue(dialogueB);
                 //calls the trigger dialogue function in the dialogue script
                 Debug.Log("Nothing Happened");
             }

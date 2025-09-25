@@ -12,13 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1e92aa86ea51c4e928c6e3df1395a7, type: 3}
   m_Name: MB Dialogue B
   m_EditorClassIdentifier: 
-  dialogue:
-    dialogueLines:
-    - character:
-        Name: Muriel
-        icon: {fileID: 8533074169622598265, guid: 432392ab610b909449bbd1d266c1fa90, type: 3}
-      line: I don't have enough ingredients yet
-    - character:
-        Name: Muriel
-        icon: {fileID: 8533074169622598265, guid: 432392ab610b909449bbd1d266c1fa90, type: 3}
-      line: Maybe I should check the recipe again
+  dialogueLines:
+  - Name: sfdgsdf
+    icon: {fileID: 5515555575900923866, guid: f57eed22d3937b44f9a0341b799fe06a, type: 3}
+    line: fgdfsgdf
+  - Name: 
+    icon: {fileID: 3911076871811252347, guid: 4d520166dc6e5c44d891ae460423d7c7, type: 3}
+    line: gfgfgfgfg
