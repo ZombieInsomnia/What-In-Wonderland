@@ -66,11 +66,17 @@ public class InventoryManager : MonoBehaviour
     public void Remove()
     {
         Items.RemoveRange(1, 7);
+        for(int i = ItemContent.childCount -1; i > 0; i--)
+        {
+            Debug.Log(ItemContent.GetChild(i).name);
+            Destroy(ItemContent.GetChild(i).gameObject);
+        }
     }
 
     public void QuestItemGiven()
     {
         Items.Remove(questItem);
+        Destroy(ItemContent.GetChild(1).gameObject);
     }
 
     
