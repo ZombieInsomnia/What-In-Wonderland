@@ -13,7 +13,8 @@ public class DialogueManager : MonoBehaviour
     int dialogueIndex;
     public static DialogueManager instance;
     public bool isDialogueActive = false;
-    public float typingSpeed = 0.01f;
+    public float typingSpeed;
+    public Dialogue startDialogue;
     List<DialogueLine> currentDialogue = new List<DialogueLine>();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,6 +22,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (instance == null)
             instance = this;
+        StartDialogue(startDialogue);
     }
     void Update()
     {

@@ -18,11 +18,14 @@ public class InventoryManager : MonoBehaviour
     public TextMeshProUGUI itemName, itemDescription;
     public Image itemDetailedImage;
     public GameObject checkItemPanel;
-   
+    
+    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-      
+        
+
         Add(initialItem);
     }
 
@@ -78,6 +81,7 @@ public class InventoryManager : MonoBehaviour
         Items.Remove(questItem);
         Destroy(ItemContent.GetChild(1).gameObject);
     }
+  
 
     
 }

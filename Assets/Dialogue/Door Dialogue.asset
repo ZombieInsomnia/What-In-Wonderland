@@ -10,9 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a1e92aa86ea51c4e928c6e3df1395a7, type: 3}
-  m_Name: MB Dialogue A
+  m_Name: Door Dialogue
   m_EditorClassIdentifier: 
   dialogueLines:
   - Name: Muriel
     icon: {fileID: 8533074169622598265, guid: 432392ab610b909449bbd1d266c1fa90, type: 3}
-    line: Ok now to put this in the oven
+    line: I haven't finished making the sugar cookies
+  - Name: Muriel
+    icon: {fileID: 8533074169622598265, guid: 432392ab610b909449bbd1d266c1fa90, type: 3}
+    line: not like I want to go out into that overgrown garden anyways.....
+  - Name: Muriel
+    icon: {fileID: 8533074169622598265, guid: 432392ab610b909449bbd1d266c1fa90, type: 3}
+    line: probably filled with creepy crawlies *shudder*

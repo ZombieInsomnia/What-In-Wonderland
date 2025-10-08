@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 44f5409dfb14cd54db4ddc46c1303959
+  - enabled: 1
     path: Assets/Scenes/KitchenSceneDay.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/KitchenCutScene.unity
+    guid: 383a62144a48b7b4493d7e8818b4ad0b
+  - enabled: 1
+    path: Assets/Scenes/KitchenScene2.unity
+    guid: 823552352b46c2f40b922cc24ca2c3d6
+  - enabled: 1
+    path: Assets/Scenes/EndMenu.unity
+    guid: d24ad979f46a50e499044cf32f235a1d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

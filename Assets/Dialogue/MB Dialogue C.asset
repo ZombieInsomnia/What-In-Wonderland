@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1e92aa86ea51c4e928c6e3df1395a7, type: 3}
   m_Name: MB Dialogue C
   m_EditorClassIdentifier: 
-  dialogue:
-    dialogueLines: []
+  dialogueLines:
+  - Name: Muriel
+    icon: {fileID: 8533074169622598265, guid: 432392ab610b909449bbd1d266c1fa90, type: 3}
+    line: ah it's dirty, I'll have to wash it after

@@ -28,7 +28,7 @@ public class MixingBowlScript : MonoBehaviour
             itemPickup.PickUp();
             Oven.hasBakingTray = true;
             itemsHaveBeenUsed = true;
-            
+            DialogueManager.instance.StartDialogue(dialogueA);
         }
         if (recipeItems == false)
         {
@@ -40,7 +40,7 @@ public class MixingBowlScript : MonoBehaviour
             }
             if (itemsHaveBeenUsed == true) 
             {
-                
+                DialogueManager.instance.StartDialogue(dialogueC);
                 Debug.Log("The bowl is dirty we can't use it");
             }
         }

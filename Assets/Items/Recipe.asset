@@ -16,6 +16,6 @@ MonoBehaviour:
   itemName: Recipe
   icon: {fileID: -8055373611961622915, guid: e939a57f0d23eda47a0ff76e285ffcd3, type: 3}
   itemImage: {fileID: -9213476709746751795, guid: 9c2c18b372266d44d8fd25d7e28adb2f, type: 3}
-  itemDescription: "a recipe on how to make shortbread biscuits, mother gave this
-    to me. \n\nSays I need \t\t\t\t\t\t\tEgg\nButter\nBaking Soda\nBaking Powder\nFlour\nSugar\nVanilla
+  itemDescription: "a recipe on how to make sugar cookies, mother gave this to me.
+    \n\nSays I need \t\t\t\t\t\t\tEgg\nButter\nBaking Soda\nBaking Powder\nFlour\nSugar\nVanilla
     Extract"

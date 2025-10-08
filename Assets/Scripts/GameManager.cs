@@ -8,12 +8,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] Canvas Inventory;
     [SerializeField] InventoryManager inventoryManager;
     public GameObject itemChecker;
+   
     
     void Start()
     {
        
         Inventory = GetComponent<Canvas>();
         Inventory.enabled = false;
+        
+
     }
 
     // Update is called once per frame
