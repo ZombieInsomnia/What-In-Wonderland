@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     float vertical;
     public Transform visuals;
     [SerializeField] GameManager gameManager;
+    public Animator anim;
      Rigidbody rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,8 +21,23 @@ public class Player : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical"); 
-    }
-        
+        if (horizontal != 0)
+        {
+            anim.SetBool("isMoving", true);
+        }
+      
+        else
+        {
+            anim.SetBool("isMoving", false);
+        }
+
+        if (vertical != 0)
+        {
+            anim.SetBool("isMoving", true);
+        }
+        }
+
+
     private void FixedUpdate()
     {
         Vector3 moveDirection = new Vector3(horizontal, 0, vertical);
