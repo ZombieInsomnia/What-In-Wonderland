@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inRange: 0
-  interactKey: 105
+  interactKey: 101
   interactAction:
     m_PersistentCalls:
       m_Calls:
@@ -62,6 +62,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+  interactiveText: {fileID: 0}
 --- !u!65 &4872521781855399101
 BoxCollider:
   m_ObjectHideFlags: 0

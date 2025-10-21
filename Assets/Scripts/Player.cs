@@ -7,7 +7,6 @@ public class Player : MonoBehaviour
     float horizontal;
     float vertical;
     public Transform visuals;
-    [SerializeField] GameManager gameManager;
     public Animator anim;
      Rigidbody rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
