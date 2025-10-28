@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 2
   itemName: Egg
   icon: {fileID: 4249389816323573555, guid: 055effd8314e40c4696484211ab1bb74, type: 3}
-  type: 1
+  itemImage: {fileID: 4249389816323573555, guid: 055effd8314e40c4696484211ab1bb74, type: 3}
   itemDescription: 'A small brown egg founded in aunt''s fridge
 
 '

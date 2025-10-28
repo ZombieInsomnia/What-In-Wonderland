@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 5
   itemName: Baking Soda
   icon: {fileID: -4828790829243327663, guid: 5b83214c8d1db2f40bc4d0fa71bdba81, type: 3}
-  type: 1
+  itemImage: {fileID: -4828790829243327663, guid: 5b83214c8d1db2f40bc4d0fa71bdba81, type: 3}
   itemDescription: a box of baking soda found in my aunt's kitchen cabinet

@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 9
   itemName: Cookie Tray
   icon: {fileID: -1602285273616276953, guid: 466f99c5cfe1c1c4b81763d0084b90db, type: 3}
-  type: 0
+  itemImage: {fileID: -1602285273616276953, guid: 466f99c5cfe1c1c4b81763d0084b90db, type: 3}
   itemDescription: 'a tray with rolled up cookie dough ready to be put into the oven
 
 '

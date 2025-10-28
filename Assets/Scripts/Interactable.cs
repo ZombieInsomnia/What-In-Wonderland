@@ -9,7 +9,8 @@ public class Interactable : MonoBehaviour
     public bool inRange;
     public KeyCode interactKey;
     public UnityEvent interactAction;
-    
+    public Animator reaction;
+
     [SerializeField] TextMeshProUGUI interactiveText;
     void Start()
     {
@@ -36,11 +37,17 @@ public class Interactable : MonoBehaviour
         {
             inRange = true;
             interactiveText.enabled = true;
+            reaction.SetBool("caninteract", true);
+            reaction.SetBool("leftrange", false);
+
         }
     }
     private void OnTriggerExit(Collider collision)
     {
         inRange = false;                          
-        interactiveText.enabled = false;    
+        interactiveText.enabled = false;
+        reaction.SetBool("leftrange", true);
+        reaction.SetBool("caninteract", false);
+        
     }
 }

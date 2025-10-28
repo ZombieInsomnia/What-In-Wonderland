@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 4
   itemName: Flour
   icon: {fileID: -4673808200027959132, guid: 2747cb98494daae4db79f4666da0a41c, type: 3}
-  type: 1
+  itemImage: {fileID: -4673808200027959132, guid: 2747cb98494daae4db79f4666da0a41c, type: 3}
   itemDescription: 'a bag of flour found in my aunt''s kitchen cabinet
 
 '

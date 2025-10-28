@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 3
   itemName: Butter
   icon: {fileID: 686253537836427642, guid: 910550d841a5d9f4d9288a017a024866, type: 3}
-  type: 1
+  itemImage: {fileID: 686253537836427642, guid: 910550d841a5d9f4d9288a017a024866, type: 3}
   itemDescription: 'A stick of butter from aunt''s fridge
 
 '

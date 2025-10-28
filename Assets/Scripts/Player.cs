@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     float vertical;
     public Transform visuals;
     public Animator anim;
+
+    
      Rigidbody rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -53,6 +55,7 @@ public class Player : MonoBehaviour
             }
         }
     }
+    
 }
     
 

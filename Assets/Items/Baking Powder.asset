@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 6
   itemName: Baking Powder
   icon: {fileID: 3911076871811252347, guid: 4d520166dc6e5c44d891ae460423d7c7, type: 3}
-  type: 1
+  itemImage: {fileID: 3911076871811252347, guid: 4d520166dc6e5c44d891ae460423d7c7, type: 3}
   itemDescription: 'a box of baking powder found in my aunt''s kitchen cabinet
 
 '

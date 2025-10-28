@@ -11,6 +11,7 @@ public class MixingBowlScript : MonoBehaviour
     [SerializeField] InventoryManager inventoryManager;
     [SerializeField] OvenScript Oven;
     [SerializeField] ItemPickup itemPickup;
+    public Interactable Interactable;
     
 
     public Dialogue dialogueA;
@@ -29,6 +30,8 @@ public class MixingBowlScript : MonoBehaviour
             Oven.hasBakingTray = true;
             itemsHaveBeenUsed = true;
             DialogueManager.instance.StartDialogue(dialogueA);
+            
+
         }
         if (recipeItems == false)
         {
@@ -37,11 +40,15 @@ public class MixingBowlScript : MonoBehaviour
                 DialogueManager.instance.StartDialogue(dialogueB);
                 //calls the trigger dialogue function in the dialogue script
                 Debug.Log("Nothing Happened");
+                
             }
             if (itemsHaveBeenUsed == true) 
             {
                 DialogueManager.instance.StartDialogue(dialogueC);
                 Debug.Log("The bowl is dirty we can't use it");
+                
+                
+
             }
         }
     }

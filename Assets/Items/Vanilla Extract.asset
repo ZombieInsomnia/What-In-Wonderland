@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 8
   itemName: Vanilla Extract
   icon: {fileID: 8709450489304053464, guid: 46c5d0b62e71ed347aeda68bd6eca06f, type: 3}
-  type: 1
+  itemImage: {fileID: 8709450489304053464, guid: 46c5d0b62e71ed347aeda68bd6eca06f, type: 3}
   itemDescription: a vial of vanilla extract found in my aunt's kitchen cabinet

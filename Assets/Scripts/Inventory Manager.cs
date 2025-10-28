@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -18,8 +17,8 @@ public class InventoryManager : MonoBehaviour
     public TextMeshProUGUI itemName, itemDescription;
     public Image itemDetailedImage;
     public GameObject checkItemPanel;
-    
-    
+
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

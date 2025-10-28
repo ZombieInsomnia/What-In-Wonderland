@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 7
   itemName: Sugar
   icon: {fileID: 245564478872703662, guid: 2ead12fd028a9b344a76d65287f1bd8d, type: 3}
-  type: 1
+  itemImage: {fileID: 245564478872703662, guid: 2ead12fd028a9b344a76d65287f1bd8d, type: 3}
   itemDescription: a jar of sugar found in my aunt's kitchen cabinet
